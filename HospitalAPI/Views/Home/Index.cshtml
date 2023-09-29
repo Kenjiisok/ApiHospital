@@ -1,32 +1,45 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
 
-<div class="text-center">
-    <div class="card-group">
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body bg-primary text-white">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<body>
+    <main>
+        <div class="text-center">
+            <h1 class="jumbotron">Bem vindo</h1>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body bg-primary text-white">
+                        <img src="/img/011-medical-history.svg" class="card-img-top" alt="icon historico medico">
+                        <h5 class="card-title">Resultado de Exames</h5>
+                    </div>
+                </div>
+                <div class="card" .bg-primary>
+                    <div class="card-body bg-primary text-white">
+                        <img src="/img/008-stopwatch.svg" class="card-img-top" alt="icon agendamento exames">
+                        <h5 class="card-title ">Agendamento de Exames</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body bg-primary text-white">
+                        <img src="/img/006-first-aid-kit.svg" class="card-img-top" alt="icon para fazer consultas">
+                        <h5 class="card-title">
+                            Consultas
+                        </h5>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card" .bg-primary>
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body bg-primary text-white">
-                <h5 class="card-title ">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body bg-primary text-white">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-        </div>
-    </div>
-</div>
+    </main>
+</body>
 @{
     ViewBag.Title = "Home Page";
 }

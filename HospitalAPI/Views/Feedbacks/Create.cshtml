@@ -23,14 +23,15 @@
                 <span asp-validation-for="email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="avaliacao" class="control-label"></label>
-                <input asp-for="avaliacao" class="form-control" />
-                <span asp-validation-for="avaliacao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="estrelas" class="control-label"></label>
-                <input asp-for="estrelas" class="form-control" />
-                <span asp-validation-for="estrelas" class="text-danger"></span>
+                <div id="star-rating">
+                    <label>Classificação:</label>
+                    <div class="star" data-rating="1">★</div>
+                    <div class="star" data-rating="2">★</div>
+                    <div class="star" data-rating="3">★</div>
+                    <div class="star" data-rating="4">★</div>
+                    <div class="star" data-rating="5">★</div>
+                    <input type="hidden" id="avaliacao" name="avaliacao" />
+                </div>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
@@ -38,7 +39,7 @@
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary bg-primary" />
             </div>
         </form>
     </div>
@@ -49,5 +50,8 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="caminho_para_o_seu_arquivo_js/feedback.js"></script>
 }

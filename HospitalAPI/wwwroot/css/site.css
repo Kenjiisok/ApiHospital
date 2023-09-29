@@ -20,3 +20,25 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+img:hover{
+    cursor: pointer
+}
+
+/* Estilo para as estrelas */
+.star {
+    cursor: pointer;
+    display: inline-block; /* Para tornar as estrelas uma ao lado da outra */
+    font-size: 24px; /* Ajuste o tamanho das estrelas conforme necessário */
+    margin-right: 5px; /* Espaçamento entre as estrelas */
+}
+
+    /* Estilo para as estrelas destacadas */
+    .star.highlighted {
+        color: gold;
+    }
